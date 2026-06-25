@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Loulu’s Site</title>
+  <title>IRS Services</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to my site!</h1>
-  <p>This is my homepage deployed on Netlify.</p>
-  <a href="church.html">Go to Church Page</a>
+  <!-- Main Heading -->
+  <h1>Welcome to IRS Services</h1>
+  
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>IRS Services provides professional tax and financial solutions to help individuals and businesses stay compliant and grow with confidence.</p>
+  </section>
+
+  <!-- Contact Form -->
+  <form name="contact" method="POST" data-netlify="true">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
 </body>
 </html>
